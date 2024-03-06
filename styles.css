@@ -83,7 +83,7 @@ body {
   background: white;
   cursor: pointer;
 }
-.compare input::-webkit-slider-thum:active {
+.compare input::-webkit-slider-thumb:active {
   background: #e25a5a;
   border: 1px solid #e25a5a;
   transition: all 300ms ease-in-out;
