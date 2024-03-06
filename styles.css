@@ -53,7 +53,7 @@ body {
   top: 0px;
   width: 100%;
   height: 100%;
-  background:url("mapviewer/Holy-Trinity-Church-HTC-West-End[78].jpg");
+  background:url("coventryresources/mapviewer/Holy-Trinity-Church-HTC-West-End[78].jpg");
 }
 .compare .before .after {
   position: absolute;
@@ -61,7 +61,7 @@ body {
   left:0px;
   width:320px;
   height:400px;
-  background:url("mapviewer/looking\ west\ htc\ 1560.jpg");
+  background:url("coventryresources/mapviewer/looking\ west\ htc\ 1560.jpg");
   z-index:2;
 }
 .compare input{
