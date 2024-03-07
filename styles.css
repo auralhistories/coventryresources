@@ -21,9 +21,94 @@
 
 body {
   font-family: 'Open Sans', Helvetica, sans-serif;
-  margin: 50px;
 }
-/* Style sheet for image slider starts here */
+.title {
+  margin-left: 20px;
+  margin-top: 60px;
+}
+section {
+  margin: 20px;
+}
+header {
+  background-color: white;
+  border: 1px solid black;
+  margin: 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.dropdown img{
+  max-width: 10px;
+}
+
+/* Logo and home button banner: */
+.banner {
+  position:relative;
+  top: 30px;
+  background-color: white;
+  width: 100%;
+  height:fit-content;
+}
+.banner img{
+  width: 444px;
+}
+.banner .home-button {
+  display: inline-block;
+  position: absolute;
+  left: 500px;
+  bottom: 40px;
+}
+.home-button a{
+  color:#3f13bd;
+  text-decoration: none;
+}
+.home-button a:hover {text-decoration: underline;}
+
+/* RC dropdown menus: */
+.dropbtn {
+  background-color: white;
+  color: black;
+  text-transform: capitalize;
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+  border: 1px solid black;
+}
+.dropdown-content a {
+  color: red;
+  padding: 1px 3px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content p {
+  color: #3f13bd;
+  padding: 4px 6px;
+  text-decoration: none;
+  display: block;
+  width: 450px;
+}
+.dropdown-content a:hover {text-decoration: underline;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: black;}
+.dropdown:hover .dropbtn {color: white;}
+
+/* Image slider: */
 * {
   margin:0px;
   padding:0px;
@@ -54,7 +139,6 @@ body {
   width: 100%;
   height: 100%;
   background-image:url("./mapviewer/htc_matterport_west.jpg");
-
 }
 .compare .before .after {
   position: absolute;
@@ -88,4 +172,24 @@ body {
   background: #e25a5a;
   border: 1px solid #e25a5a;
   transition: all 300ms ease-in-out;
+}
+/* Responsivity */
+@media screen and (max-width: 560px){
+  .banner .home-button {
+    left: 0px;
+    bottom: -35px;
+  }
+  .banner img{
+      max-width: 80%;
+  }
+  .title {
+    margin-top: 82px;
+  }
+  .dropdown-content p {
+    color: #3f13bd;
+    padding: 4px 6px;
+    text-decoration: none;
+    display: block;
+    width: 300px;
+  }
 }
